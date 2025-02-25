@@ -1,0 +1,21 @@
+.hero {
+    background: url('/img/home-banner.jpg') no-repeat center center/cover;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.search-box {
+    padding: 10px;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.location-grid,
+.review-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}

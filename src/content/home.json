@@ -1,0 +1,38 @@
+{
+    "hero": {
+      "title": "Explore Sri Lanka",
+      "subtitle": "One tap away"
+    },
+    "locations": [
+      { "name": "Kandy", "image": "/img/kandy.jpg" },
+      { "name": "Dambulla", "image": "/img/dambulla.jpg" },
+      { "name": "Galle", "image": "/img/galle.jpg" },
+      { "name": "Nuwara Eliya", "image": "/img/nuwara-eliya.jpg" },
+      { "name": "Badulla", "image": "/img/badulla.jpg" },
+      { "name": "Trincomalee", "image": "/img/trincomalee.jpg" }
+    ],
+    "reviews": [
+      {
+        "name": "Emily, UK",
+        "text": "This platform made my Sri Lanka trip unforgettable! Highly recommend.",
+        "rating": 5
+      },
+      {
+        "name": "Anwar, UAE",
+        "text": "Planning my Sri Lankan adventure was so easy with this site!",
+        "rating": 5
+      },
+      {
+        "name": "Priya, India",
+        "text": "Exploring Sri Lanka felt effortless with this platform!",
+        "rating": 5
+      }
+    ],
+    "faqs": [
+      "What is the best time of year to visit Sri Lanka?",
+      "What are the best tours in Sri Lanka?",
+      "What currency is used in Sri Lanka?",
+      "Do I need a visa to visit Sri Lanka?"
+    ]
+  }
+  
