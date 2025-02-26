@@ -1,21 +1,24 @@
 import React from "react";
-import Header from "../components/Header";
-import Hero from "../components/Hero";
-import Locations from "../components/Locations";
-import Reviews from "../components/Reviews";
-import FAQs from "../components/FAQs";
-import Footer from "../components/Footer";
-import homeContent from "../content/home.json";
+import heroImage from "../assets/img/hero.jpg"; // Import image from img folder
+import locationsData from "../content/locations.json"; // Import JSON content
+
+console.log(locationsData); // Debugging line to check if data is imported correctly
 
 const HomePage = () => {
   return (
-    <div>
-      <Header />
-      <Hero title={homeContent.hero.title} subtitle={homeContent.hero.subtitle} />
-      <Locations locations={homeContent.locations} />
-      <Reviews reviews={homeContent.reviews} />
-      <FAQs faqs={homeContent.faqs} />
-      <Footer />
+    <div className="home-container">
+      <header className="header" style={{ backgroundImage: `url(${heroImage})` }}>
+        <h1>Explore Sri Lanka</h1>
+        <p>One tap away from an amazing journey</p>
+      </header>
+      <section className="features">
+        {locationsData.map((location, index) => (
+          <div className="feature-card" key={index}>
+            <h2>{location.name}</h2>
+            <p>{location.description}</p>
+          </div>
+        ))}
+      </section>
     </div>
   );
 };

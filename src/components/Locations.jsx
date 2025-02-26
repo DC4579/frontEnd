@@ -8,7 +8,7 @@ const Locations = ({ locations }) => {
       <div className="location-grid">
         {locations.map((loc, index) => (
           <div key={index} className="location-card">
-            <img src={loc.image} alt={loc.name} />
+            <img src={loc.image} alt={loc.name || "Location image"} />
             <h3>{loc.name}</h3>
           </div>
         ))}

@@ -7,19 +7,17 @@ import Reviews from "./components/Reviews";
 import homeData from "./content/home.json";
 import "./styles/global.css";   // Ensure the path is correct
 
-
-
-
 function App() {
   return (
     <div>
-      <Hero />
-      <FAQ />
-      <Locations />
-      <Reviews />
+      <Hero title={homeData.hero.title} subtitle={homeData.hero.subtitle} />
+      <FAQ faqs={homeData.faqs} />
+      <Locations locations={homeData.locations} />
+      <Reviews reviews={homeData.reviews} />
       <Footer />
     </div>
   );
 }
 
 export default App;
+
